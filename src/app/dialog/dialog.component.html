@@ -1,0 +1,54 @@
+<h2 mat-dialog-title>Add Employee</h2>
+
+<div mat-dialog-content>
+  <form [formGroup]="employeeForm">
+    <mat-form-field appearance="fill">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name" maxlength="15" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input
+        type="email"
+        matInput
+        formControlName="email"
+        placeholder="Ex. pat@example.com"
+        maxlength="25"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Mobile number</mat-label>
+      <input type="tel" matInput formControlName="phoneNumber" maxlength="10" />
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Joining date</mat-label>
+      <input matInput [matDatepicker]="picker" formControlName="joinDate" />
+      <!-- <mat-hint>MM/DD/YYYY</mat-hint> -->
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Select job role</mat-label>
+      <mat-select formControlName="jobRole">
+        <mat-option>None</mat-option>
+        <mat-option value="FullStack developer">FullStack developer</mat-option>
+        <mat-option value="Frontend">Frontend</mat-option>
+        <mat-option value="Backend">Backend</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Salary</mat-label>
+      <input type="number" matInput formControlName="salary" max="1200000000" />
+    </mat-form-field>
+    <div mat-dialog-actions [align]="'end'">
+      <button mat-raised-button color="warn" mat-dialog-close="">cancel</button>
+      <button mat-raised-button color="primary" (click)="addEmployee()">
+        {{ actionBtn }}
+      </button>
+    </div>
+  </form>
+</div>

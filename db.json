@@ -1,0 +1,74 @@
+{
+  "Employee": [
+    {
+      "name": "harsh",
+      "email": "harsh@gmail.com",
+      "phoneNumber": "9874563210",
+      "joinDate": "2022-11-04T18:30:00.000Z",
+      "jobRole": "FullStack developer",
+      "salary": 40000,
+      "id": 5
+    },
+    {
+      "name": "muneer",
+      "email": "muneer@gmail.com",
+      "phoneNumber": "9874563210",
+      "joinDate": "2022-11-05T18:30:00.000Z",
+      "jobRole": "Frontend",
+      "salary": 25000,
+      "id": 6
+    },
+    {
+      "name": "madhuri",
+      "email": "madhuri@gmail.com",
+      "phoneNumber": "1111111111",
+      "joinDate": "2020-11-06T18:30:00.000Z",
+      "jobRole": "Frontend",
+      "salary": 1100000,
+      "id": 7
+    },
+    {
+      "name": "ahmed",
+      "email": "ahmed@gmail.com",
+      "phoneNumber": "9874563210",
+      "joinDate": "2022-11-04T18:30:00.000Z",
+      "jobRole": "FullStack developer",
+      "salary": 25000,
+      "id": 8
+    },
+    {
+      "name": "mohammed",
+      "email": "mohammed@gmail.com",
+      "phoneNumber": "8546921003",
+      "joinDate": "2022-11-06T18:30:00.000Z",
+      "jobRole": "FullStack developer",
+      "salary": 25000,
+      "id": 9
+    },
+    {
+      "name": "david",
+      "email": "david@gmail.com",
+      "phoneNumber": "8649515755",
+      "joinDate": "2022-11-16T18:30:00.000Z",
+      "jobRole": "Backend",
+      "salary": 35000,
+      "id": 10
+    }
+  ],
+  "signUp": [
+    {
+      "name": "ahmed",
+      "mobile": "8465978546",
+      "email": "ahmed@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "name": "ahmed",
+      "mobile": "8745693210",
+      "email": "ahmed123@gmail.com",
+      "password": "123",
+      "id": 2
+    }
+  ]
+}

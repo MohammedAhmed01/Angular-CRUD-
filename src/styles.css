@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+  
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+.dark {
+  background-color: black;
+  color: white;
+}
+.table-bg {
+  background-color: rgb(20, 4, 4);
+  box-shadow: 2px 3px 10px rgb(234, 206, 206) !important;
+}
+.tr {
+  color: white !important;
+}
+.btnbg {
+  background-color: white !important;
+  color: black !important;
+}

@@ -1,0 +1,76 @@
+<div class="body">
+  <mat-toolbar color="primary" class="position">
+    <button
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon class="icon">star_border</mat-icon>
+    </button>
+    <span class="name ml-3">Angular14 CRUD</span>
+    <span class="example-spacer"></span>
+    <button class="btn btn-danger mr-2" (click)="logout()">
+      <mat-icon>exit_to_app</mat-icon> Logout
+    </button>
+    <button class="btn btn-dark mr-2" (click)="darkMode()" id="btnbg">
+      <mat-icon>brightness_4</mat-icon> {{ mode }}
+    </button>
+
+    <button
+      mat-raised-button
+      color="accent"
+      class="bg-success"
+      (click)="openDialog()"
+    >
+      <mat-icon>how_to_reg</mat-icon> Add Employee
+    </button>
+  </mat-toolbar>
+
+  <h1
+    class="m-3 text-success p-3 rounded"
+    style="background-color: rgb(207, 241, 207)"
+  >
+    Employees Data!
+  </h1>
+  <div class="container rounded">
+    <table class="table" id="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Join Date</th>
+          <th>Job Role</th>
+          <th>Salary</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr *ngFor="let employee of getEmployeeData">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.email }}</td>
+          <td>{{ employee.phoneNumber }}</td>
+          <td>{{ employee.joinDate | date }}</td>
+          <td>{{ employee.jobRole }}</td>
+          <td>{{ employee.salary | currency: "INR" }}</td>
+          <td>
+            <button
+              class="btn btn-primary mr-3"
+              (click)="editEmployee(employee)"
+            >
+              <mat-icon>create</mat-icon> Edit
+            </button>
+            <button
+              class="btn btn-danger"
+              (click)="deleteEmployee(employee.id)"
+            >
+              <mat-icon>delete</mat-icon> Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

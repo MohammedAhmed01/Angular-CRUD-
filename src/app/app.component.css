@@ -1,0 +1,56 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+.bg {
+  background-color: rgb(13, 77, 214);
+}
+.name {
+  color: white;
+  font-size: 30px;
+}
+.icon {
+  color: rgb(234, 234, 247);
+}
+.container {
+  margin-top: 20px;
+  box-shadow: 2px 3px 10px rgb(5, 5, 5);
+  padding: 0;
+ 
+}
+mat-icon {
+  font-size: 20px;
+  vertical-align: middle;
+}
+table {
+  text-align: center;
+  vertical-align: middle;
+}
+table thead {
+  background-color: antiquewhite;
+}
+table td {
+  vertical-align: middle;
+  font-weight: 400;
+}
+.example-icon .icon {
+  font-size: 50px;
+  height: 50px;
+  width: 50px;
+  line-height: 43px;
+  margin-right: 5px;
+  color: rgb(241, 232, 122);
+}
+
+.position{
+ position: sticky;
+ top: 0;
+}
+.body{
+  padding-bottom: 20px;
+}
+/* tbody tr:nth-child(even){
+ background-color: antiquewhite;
+}
+tbody tr:nth-child(odd){
+    background-color: rgb(231, 220, 224);
+   } */
