@@ -1,5 +1,21 @@
 # Angular14CRUD
 
+****************************************************************************************
+Note: follow this steps...
+
+To use this project first install json-server in the project folder
+use this cmd:          npm install -g json-server 
+then use this cmd:     json-server --watch db.json
+then cmd:              ng serve -o
+
+now you can use the application
+
+This project is done with Angular14 , Angular-Material-UI and JSON-Server.
+It has a signup and login , initially the user has to signup and then login , 
+without login user can't do the crud operation (create, read, update and delete).
+
+*******************************************************************************************
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
 ## Development server
